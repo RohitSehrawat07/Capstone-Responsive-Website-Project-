@@ -1,335 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wanderlust – Explore the World</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wanderlust – Explore the World</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
 
-    <!-- NAVBAR -->
-    <header>
-        <div class="logo">Wanderlust</div>
+  <header class="site-header" role="banner">
+    <div class="logo">Wanderlust</div>
 
-        <nav>
-            <a href="#">Destinations</a>
-            <a href="#">Packages</a>
-            <a href="#">How It Works</a>
-            <a href="#">Testimonials</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
+    <nav class="main-nav" role="navigation" aria-label="Primary">
+      <a href="#destinations">Destinations</a>
+      <a href="#packages">Packages</a>
+      <a href="#how">How It Works</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <div class="overlay"></div>
-
-        <div class="content">
-            <h1>Explore the World with<br>Wanderlust</h1>
-
-            <p>Your adventure starts here. Discover breathtaking
-                destinations, curated tours, and unforgettable experiences.
-            </p>
-
-            <button class="cta">Start Your Journey</button>
-        </div>
+  <main>
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="inner">
+        <h1 id="hero-title">Explore the World with Wanderlust</h1>
+        <p>Your adventure starts here. Discover breathtaking destinations, curated tours, and unforgettable experiences.</p>
+        <button class="cta" id="start-journey">Start Your Journey</button>
+      </div>
     </section>
 
+    <!-- DESTINATIONS -->
+    <section id="destinations">
+      <h2 class="section-title">Popular Destinations</h2>
 
+      <div class="dest-grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=1200&auto=format&fit=crop" alt="Maldives beach">
+          <div class="card-content">
+            <h3>Maldives</h3>
+            <p>Crystal clear waters and white sandy beaches.</p>
+          </div>
+        </article>
 
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1200&auto=format&fit=crop" alt="Paris">
+          <div class="card-content">
+            <h3>Paris</h3>
+            <p>The city of lights and romance awaits you.</p>
+          </div>
+        </article>
 
-<!-- POPULAR DESTINATIONS SECTION -->
-<section class="destinations">
-    <h2>Popular Destinations</h2>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=1200&auto=format&fit=crop" alt="Bali">
+          <div class="card-content">
+            <h3>Bali</h3>
+            <p>Experience the magic of tropical paradise.</p>
+          </div>
+        </article>
 
-    <div class="dest-grid">
-
-        <!-- Maldives -->
-        <div class="card">
-            <img src="images.unsplash.jpg" alt="Maldives">
-            <div class="card-content">
-                <h3>Maldives</h3>
-                <p>Crystal clear waters and white sandy beaches.</p>
-            </div>
-        </div>
-
-        <!-- Paris -->
-        <div class="card">
-            <img src="images.unsplash2.jpg" alt="Paris">
-            <div class="card-content">
-                <h3>Paris</h3>
-                <p>The city of lights and romance awaits you.</p>
-            </div>
-        </div>
-
-        <!-- Bali -->
-        <div class="card">
-            <img src="images.unsplash3.jpg" alt="Bali">
-            <div class="card-content">
-                <h3>Bali</h3>
-                <p>Experience the magic of tropical paradise.</p>
-            </div>
-        </div>
-
-        <!-- New York -->
-        <div class="card">
-            <img src="images.unsplash4.jpg" alt="New York">
-            <div class="card-content">
-                <h3>New York</h3>
-                <p>The city that never sleeps, full of wonders.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-
-
-<!-- ================= HERO SECTION ================= -->
-    <header class="hero">
-        <h1>Explore The World</h1>
-        <p>Find the best destinations and tour packages</p>
-        <a href="#packages" class="btn">Get Started</a>
-    </header>
-
-    <!-- ================= TOUR PACKAGES SECTION ================= -->
-    <section class="packages" id="packages">
-        <h2 class="section-title">Tour Packages</h2>
-
-        <div class="package-container">
-
-            <div class="package-card">
-                <h3>Maldives Escape</h3>
-                <p>Luxury resort, snorkeling, island hopping</p>
-                <h4 class="price">$1,499</h4>
-                <span class="duration">7 Days / 6 Nights</span>
-                <button class="btn">Book Now</button>
-            </div>
-
-            <div class="package-card">
-                <h3>Paris Discovery</h3>
-                <p>Eiffel Tower, Louvre, Seine cruise</p>
-                <h4 class="price">$1,199</h4>
-                <span class="duration">5 Days / 4 Nights</span>
-                <button class="btn">Book Now</button>
-            </div>
-
-            <div class="package-card">
-                <h3>Bali Adventure</h3>
-                <p>Temples, rice terraces, beaches</p>
-                <h4 class="price">$999</h4>
-                <span class="duration">6 Days / 5 Nights</span>
-                <button class="btn">Book Now</button>
-            </div>
-
-            <div class="package-card">
-                <h3>New York Explorer</h3>
-                <p>Statue of Liberty, Broadway, museums</p>
-                <h4 class="price">$1,299</h4>
-                <span class="duration">5 Days / 4 Nights</span>
-                <button class="btn">Book Now</button>
-            </div>
-
-        </div>
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format&fit=crop" alt="New York">
+          <div class="card-content">
+            <h3>New York</h3>
+            <p>The city that never sleeps, full of wonders.</p>
+          </div>
+        </article>
+      </div>
     </section>
 
-<!-- ================= HOW IT WORKS ================= -->
-<section class="how-it-works">
-    <h2 class="section-title">How It Works</h2>
+    <!-- PACKAGES -->
+    <section id="packages">
+      <h2 class="section-title">Tour Packages</h2>
 
-    <div class="steps-container">
+      <div class="package-container">
+        <article class="package-card" data-package="Maldives Escape">
+          <h3>Maldives Escape</h3>
+          <p>Luxury resort, snorkeling, island hopping</p>
+          <div class="price"> $1,499 </div>
+          <span class="duration">7 Days / 6 Nights</span>
+          <button class="btn book-btn">Book Now</button>
+        </article>
 
-        <div class="step-card">
-            <div class="step-number">1</div>
-            <h3>Choose Destination</h3>
-            <p>Browse our curated list of destinations and pick your dream trip.</p>
-        </div>
+        <article class="package-card" data-package="Paris Discovery">
+          <h3>Paris Discovery</h3>
+          <p>Eiffel Tower, Louvre, Seine cruise</p>
+          <div class="price"> $1,199 </div>
+          <span class="duration">5 Days / 4 Nights</span>
+          <button class="btn book-btn">Book Now</button>
+        </article>
 
-        <div class="step-card">
-            <div class="step-number">2</div>
-            <h3>Book Your Tour</h3>
-            <p>Reserve your spot easily with our secure online booking system.</p>
-        </div>
+        <article class="package-card" data-package="Bali Adventure">
+          <h3>Bali Adventure</h3>
+          <p>Temples, rice terraces, beaches</p>
+          <div class="price"> $999 </div>
+          <span class="duration">6 Days / 5 Nights</span>
+          <button class="btn book-btn">Book Now</button>
+        </article>
 
-        <div class="step-card">
-            <div class="step-number">3</div>
-            <h3>Enjoy & Explore</h3>
-            <p>Pack your bags and get ready for an unforgettable adventure!</p>
-        </div>
-
-    </div>
-</section>
-
-
-<!-- ================= TESTIMONIALS ================= -->
-<section class="testimonials">
-    <h2 class="section-title">Traveler Testimonials</h2>
-
-    <div class="testimonial-container">
-
-        <div class="testimonial-card">
-            <img src="img1.jpg" alt="Emily">
-            <h4>Emily R.</h4>
-            <p>"Wanderlust made my honeymoon in Maldives absolutely magical. Everything was perfectly organized!"</p>
-            <div class="stars">★★★★★</div>
-        </div>
-
-        <div class="testimonial-card">
-            <img src="img2.jpg" alt="James">
-            <h4>James T.</h4>
-            <p>"The Paris tour was a dream come true. Highly recommend their services!"</p>
-            <div class="stars">★★★★★</div>
-        </div>
-
-        <div class="testimonial-card">
-            <img src="img3.jpg" alt="Sophia">
-            <h4>Sophia L.</h4>
-            <p>"Bali was breathtaking and the guides were so friendly. Will book again!"</p>
-            <div class="stars">★★★★★</div>
-        </div>
-
-    </div>
-</section>
-
-
-
-<!-- HERO SECTION
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Explore the World</h1>
-            <p>Your journey begins here. Discover new places & unforgettable experiences.</p>
-            <a href="#" class="hero-btn">Get Started</a>
-        </div>
-    </section> -->
-
-    <!-- TRAVEL BLOG SECTION -->
-    <section class="blog-section">
-        <h2 class="section-title">Travel Blog</h2>
-
-        <div class="blog-container">
-            <div class="blog-card">
-                <img src="images.unsplash5.jpg" alt="">
-                <div class="blog-content">
-                    <h3>Top 10 Beaches to Visit in 2024</h3>
-                    <p>Discover the most stunning beaches around the globe for your next getaway.</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <img src="images.unsplash6.jpg" alt="">
-                <div class="blog-content">
-                    <h3>How to Travel on a Budget</h3>
-                    <p>Tips and tricks to make the most of your adventures without breaking the bank.</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <img src="images.unsplash7.jpg" alt="">
-                <div class="blog-content">
-                    <h3>Must-Try Foods Around the World</h3>
-                    <p>Embark on a culinary journey and savor flavors from every continent.</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </div>
-            </div>
-        </div>
+        <article class="package-card" data-package="New York Explorer">
+          <h3>New York Explorer</h3>
+          <p>Statue of Liberty, Broadway, museums</p>
+          <div class="price"> $1,299 </div>
+          <span class="duration">5 Days / 4 Nights</span>
+          <button class="btn book-btn">Book Now</button>
+        </article>
+      </div>
     </section>
 
-    <!-- STATS SECTION -->
+    <!-- HOW IT WORKS -->
+    <section id="how">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps-container">
+        <div class="step-card">
+          <div class="step-number">1</div>
+          <h3>Choose Destination</h3>
+          <p>Browse our curated list of destinations and pick your dream trip.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">2</div>
+          <h3>Book Your Tour</h3>
+          <p>Reserve your spot easily with our secure online booking system.</p>
+        </div>
+        <div class="step-card">
+          <div class="step-number">3</div>
+          <h3>Enjoy & Explore</h3>
+          <p>Pack your bags and get ready for an unforgettable adventure!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+      <h2 class="section-title">Traveler Testimonials</h2>
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop" alt="Traveler Emily">
+          <h4>Emily R.</h4>
+          <p>"Wanderlust made my honeymoon in Maldives absolutely magical. Everything was perfectly organized!"</p>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="testimonial-card">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=800&auto=format&fit=crop" alt="Traveler James">
+          <h4>James T.</h4>
+          <p>"The Paris tour was a dream come true. Highly recommend their services!"</p>
+          <div class="stars">★★★★★</div>
+        </div>
+        <div class="testimonial-card">
+          <img src="https://images.unsplash.com/photo-1545996124-1b7a3bfae3a5?q=80&w=800&auto=format&fit=crop" alt="Traveler Sophia">
+          <h4>Sophia L.</h4>
+          <p>"Bali was breathtaking and the guides were so friendly. Will book again!"</p>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+      <h2 class="section-title">Travel Blog</h2>
+      <div class="blog-container">
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=800&auto=format&fit=crop" alt="">
+          <div class="blog-content">
+            <h3>Top 10 Beaches to Visit in 2024</h3>
+            <p>Discover the most stunning beaches around the globe for your next getaway.</p>
+            <a class="read-more" href="#">Read More →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?q=80&w=800&auto=format&fit=crop" alt="">
+          <div class="blog-content">
+            <h3>How to Travel on a Budget</h3>
+            <p>Tips and tricks to make the most of your adventures without breaking the bank.</p>
+            <a class="read-more" href="#">Read More →</a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800&auto=format&fit=crop" alt="">
+          <div class="blog-content">
+            <h3>Must-Try Foods Around the World</h3>
+            <p>Embark on a culinary journey and savor flavors from every continent.</p>
+            <a class="read-more" href="#">Read More →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- STATS -->
     <section class="stats-section">
-        <div class="stats-card">
-            <h3>20+</h3>
-            <p>Cities Served</p>
-        </div>
-
-        <div class="stats-card">
-            <h3>5K+</h3>
-            <p>Happy Travelers</p>
-        </div>
-
-        <div class="stats-card">
-            <h3>50+</</h3>
-            <p>Tour Packages</p>
-        </div>
-
-        <div class="stats-card">
-            <h3>10</h3>
-            <p>Years Experience</p>
-        </div>
+      <div class="stats-card"><h3>20+</h3><p>Cities Served</p></div>
+      <div class="stats-card"><h3>5K+</h3><p>Happy Travelers</p></div>
+      <div class="stats-card"><h3>50+</h3><p>Tour Packages</p></div>
+      <div class="stats-card"><h3>10</h3><p>Years Experience</p></div>
     </section>
 
-
-
-    <section class="newsletter-section">
-    <div class="newsletter-box">
-        <h2>Subscribe to Our Newsletter</h2>
-        <p>Get exclusive deals and travel tips delivered to your inbox.</p>
-
+    <!-- NEWSLETTER -->
+    <section>
+      <div class="newsletter-box">
+        <div>
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Get exclusive deals and travel tips delivered to your inbox.</p>
+        </div>
         <div class="newsletter-input">
-            <input type="email" placeholder="Your email address">
-            <button>Subscribe</button>
+          <input id="newsletter-email" type="email" placeholder="Your email address">
+          <button class="btn" id="subscribe">Subscribe</button>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section class="contact-section">
-    <div class="contact-form">
-        <h2>Contact Us</h2>
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <div class="contact-form">
+        <h3>Contact Us</h3>
+        <input id="name" type="text" placeholder="Your Name">
+        <input id="email" type="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button class="btn" id="send-message">Send Message</button>
+      </div>
 
-        <input type="text" placeholder="Your Name">
-        <input type="email" placeholder="Your Email">
-        <textarea placeholder="Your Message"></textarea>
-
-        <button class="send-btn">Send Message</button>
-    </div>
-
-    <div class="contact-image">
-        <img src="images.unsplash4.jpg" alt="">
+      <aside class="contact-image">
+        <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=800&auto=format&fit=crop" alt="contact image">
         <button class="map-btn">Map Location</button>
-    </div>
-</section>
+      </aside>
+    </section>
+  </main>
 
-
-
-
-<footer class="footer">
+  <footer class="footer">
     <div class="footer-container">
-
-        <div class="footer-col">
-            <h3>Wanderlust</h3>
-            <a href="#">About Us</a>
-            <a href="#">Our Team</a>
-            <a href="#">Careers</a>
-        </div>
-
+      <div class="footer-col">
+        <h3>Wanderlust</h3>
+        <a href="#">About Us</a><br>
+        <a href="#">Our Team</a><br>
+        <a href="#">Careers</a>
+      </div>
       <div class="footer-col">
         <h3>Destinations</h3>
         <a href="#">Maldives</a><br>
         <a href="#">Paris</a><br>
         <a href="#">Bali</a><br>
         <a href="#">New York</a>
-        <div class="footer-col">
-            <h3>Support</h3>
-            <a href="#">FAQs</a>
-            <a href="#">Contact</a>
-            <a href="#">Terms & Conditions</a>
-            <a href="#">Privacy Policy</a>
-        </div>
-
-        <div class="footer-col">
-            <h3>Follow Us</h3>
-            <a href="#">Instagram</a>
-            <a href="#">Facebook</a>
-            <a href="#">Twitter</a>
-        </div>
+      </div>
+      <div class="footer-col">
+        <h3>Support</h3>
+        <a href="#">FAQs</a><br>
+        <a href="#">Contact</a><br>
+        <a href="#">Terms & Conditions</a><br>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <a href="#">Instagram</a><br>
+        <a href="#">Facebook</a><br>
+        <a href="#">Twitter</a>
+      </div>
     </div>
 
-    <div class="footer-bottom">
-        © 2024 Wanderlust Travel Agency. All rights reserved.
+    <div class="footer-copy">
+      © 2024 Wanderlust Travel Agency. All rights reserved.
     </div>
-</footer>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
